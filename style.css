@@ -1,0 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-top: 60px;
+    width: 50%;
+    min-width: 350px;
+    max-width: 720px;
+    box-sizing: border-box;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px 0px lightblue;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label:has(input[type=checkbox]) {
+    display: block;
+}
