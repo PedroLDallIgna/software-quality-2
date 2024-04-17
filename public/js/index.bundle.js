@@ -1,0 +1,2 @@
+(()=>{var e={881:e=>{e.exports={calcNewValue:function(e,o){return e*(1+o/100)}}},575:(e,o,r)=>{const{calcNewValue:n}=r(881);e.exports={checkOrder:function(e,o){return e?n(o,-15):o>200&&o<=500?n(o,-5):o>500?n(o,-10):o}}}},o={};function r(n){var c=o[n];if(void 0!==c)return c.exports;var t=o[n]={exports:{}};return e[n](t,t.exports,r),t.exports}(()=>{const{checkOrder:e}=r(575);console.log("Running"),console.log(e(!1,100)),console.log(e(!0,100))})()})();
+//# sourceMappingURL=index.bundle.js.map
