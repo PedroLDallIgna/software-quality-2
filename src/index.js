@@ -13,12 +13,17 @@ const check = document.querySelector("#first-buy");
 
 confirm.addEventListener("click", () => {
   if(check.checked) {
-    createPedido(nome.value, checkOrder(true, valor.value));
+    createPedido(nome.value, checkOrder(true, valor.value), true);
   } else {
-    createPedido(nome.value, checkOrder(false, valor.value));
+    createPedido(nome.value, checkOrder(false, valor.value), false);
   }
 })
 
-function createPedido(nome, valor) {
-  pedido.innerHTML += `<p>${nome}: ${valor}</p>`;
+function createPedido(nome, valor, first) {
+  if(first) {
+    pedido.innerHTML += `<p>${nome}: ${valor} reais (primeira compra)</p>`;
+  } else {
+    pedido.innerHTML += `<p>${nome}: ${valor} reais</p>`;
+  }
+  
 }
