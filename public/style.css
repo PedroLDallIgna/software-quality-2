@@ -26,9 +26,21 @@ form {
     padding: 12px;
     background-color: white;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     border-radius: 8px;
     box-shadow: 5px 5px 20px 0px lightblue;
+}
+
+#submit {
+    background-color: #b4ffe6;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #8fffda;
 }
 
 label {
