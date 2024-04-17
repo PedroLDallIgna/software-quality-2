@@ -17,3 +17,5 @@ function checkOrder(first, value) {
 }
 
 console.log(checkOrder(false, 100));
+
+module.exports = {checkOrder}
