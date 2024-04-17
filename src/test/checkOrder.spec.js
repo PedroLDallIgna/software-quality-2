@@ -1,4 +1,4 @@
-const {checkOrder} = require('../index.mjs')
+const {checkOrder} = require('../utils/checkOrder.js')
 
 describe('checkOrder', () => {
 
